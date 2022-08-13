@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Aula1.MainPage">
+
+    <ContentPage.Content>
+
+        <StackLayout Padding="20">
+            <Label Text="Nome" TextColor="Black" FontSize="25"/>
+            <Entry Placeholder="Nome"
+                   x:Name="txtNome"/>
+
+            <Label  Text="Idade" TextColor="Black" FontSize="25"/>
+            <Entry Placeholder="Idade" x:Name="txtIdade"/>
+          
+            <Label Text="Sexo" TextColor="Black" FontSize="25"/>
+            <Entry Placeholder="Sexo" x:Name="txtSexo" />
+
+            <Label Text="Telefone" TextColor="Black" FontSize="25"/>
+            <Entry Placeholder="Telefone" x:Name="txtTelefone" />
+
+            <Button Text="Cadastrar"
+                    BackgroundColor="Gray"
+                    TextColor="White"
+                    CornerRadius="20" HorizontalOptions="Center" 
+                    x:Name="btnCadastrar"
+                    Clicked="btnCadastrar_Clicked"/>
+
+        </StackLayout>
+        
+
+    </ContentPage.Content>
+
+    
+
+
+
+</ContentPage>
