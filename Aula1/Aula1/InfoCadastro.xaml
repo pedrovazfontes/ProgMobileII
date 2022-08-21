@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Aula1.InfoCadastro">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Obrigado por efetuar seu cadastro, abaixo as informações cadastradas: " TextColor="Black" FontSize="20" />
+
+            <Label Text="Nome: x" 
+                   
+                   FontSize="20"
+                   TextColor="Black"
+                   x:Name="lblNome"/>
+
+            <Label Text="Idade: x" 
+                   FontSize="20"
+                   TextColor="Black"
+                   x:Name="lblIdade" />
+
+            <Label Text="Sexo: x" 
+                   FontSize="20"
+                   TextColor="Black"
+                   x:Name="lblSexo" />
+
+            <Label Text="Telefone: x"
+                   FontSize="20"
+                   TextColor="Black"
+                   x:Name="lblTelefone"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

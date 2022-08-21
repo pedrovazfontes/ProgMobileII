@@ -17,8 +17,21 @@ namespace Aula1
 
         private void btnCadastrar_Clicked(object sender, EventArgs e)
         {
-            
-            DisplayAlert("Atenção", "Mensagem: Cadastro efetuado, confirme os dados abaixos" + "\n" +txtNome.Text + "\n" + txtIdade.Text + "\n" + txtSexo.Text + "\n" + txtTelefone.Text,"OK","Cancelar");
+            var infocadastro = Cadastro.Instancia2;
+            infocadastro.Nome = txtNome.Text;
+            infocadastro.Idade = txtIdade.Text;
+            infocadastro.Sexo = txtSexo.Text;
+            infocadastro.Telefone = txtTelefone.Text;
+
+            Navigation.PushModalAsync(new InfoCadastro(), false);
+        }
+
+        private void btnLimpar_Clicked(object sender, EventArgs e)
+        {
+            txtNome.Text = "";
+            txtSexo.Text = "";
+            txtIdade.Text = "";
+            txtTelefone.Text = "";
         }
     }
 }

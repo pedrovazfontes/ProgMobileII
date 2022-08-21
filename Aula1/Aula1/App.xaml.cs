@@ -10,7 +10,7 @@ namespace Aula1
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new PageLogin();
         }
 
         protected override void OnStart()
